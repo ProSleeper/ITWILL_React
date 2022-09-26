@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const done1 = true
+        const done2 = false
+        const done3 = undefined
+
+        const result1 = done1===true ? '참' : '거짓'
+        console.log(result1)
+
+        const result2 = done1 && '나는 참의 결과'
+        console.log(result2)
+
+        //const result3 = done2 || '나는 거짓의 결과'
+        const result3 = done3 || '나는 거짓의 결과'
+        console.log(result3)
+
+
+    </script>
+</head>
+<body>
+    <pre>
+        1. JSX영역(Javascript + XML)에서는 if,switch를 사용할 수 없다
+        2. 그외의 영역에서는 사용가능
+        3. 다중 if문 처럼 사용도 가능
+            조건1===true && '결과1'
+            조건2===true && '결과2'
+            조건3===true && '결과3'
+            조건4===true && '결과4'
+
+
+
+    </pre>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const arr1 = [10,20,30,40,50]
+        arr1.push(60)
+        arr1.push(70)
+        arr1.push(80)
+        console.log(arr1)
+
+        const arr2 = [10,20,30,40,50]
+        const arr3 = arr2.concat()
+        const arr4 = arr2.concat(60,70,80)
+        console.log('-------------')
+        console.log(arr2)
+        console.log(arr3)
+        console.log(arr4)
+        console.log(arr2)
+
+        console.log('-------------')
+        //slice(시작인덱스,갯수-1)
+        const arr5 = arr2.slice(1,4)
+        console.log(arr5)
+
+        console.log('-------------')
+        //배열객체
+        const data = [
+            {id:1,name:'배수지1',age:27},
+            {id:2,name:'배수지2',age:28},
+            {id:3,name:'배수지3',age:29},
+            {id:4,name:'배수지4',age:30},
+            {id:5,name:'배수지5',age:31},
+        ]
+        const data1 = data.concat();
+        const data2 = data.concat({
+            id:6,
+            name:'배수지6',
+            age:32
+        });
+        console.log(data1)
+        console.log(data2)
+
+
+
+    </script>
+</head>
+<body>
+    
+
+</body>
+</html>
