@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CoffeeItem = ({item:{id, name, title, img, price, desc}}) => {
+const CoffeeItem = ({item:{name, title, img, price, desc}}) => {
   return (
     <li>
       <img src={img} alt={title} />
