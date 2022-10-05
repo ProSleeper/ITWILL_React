@@ -1,4 +1,17 @@
-import React,{useState, useEffect} from "react";
+
+/**
+ * 회원가입 약관동의 ui만들기
+ * 
+ * - 전체 선택을 하면 3개의 약관이 모두 클릭이 되게 하고, 개별적으로 클릭해서 3개가 모두 클릭 됐을 때 전체선택도 체크가 되도록 구현
+ * 
+ * 
+ * 
+ */
+
+
+
+
+import React, { useState, useEffect } from "react";
 
 
 const dataList = [
