@@ -17,7 +17,7 @@ const News = () => {
     axios
       .get(url)
       .then((response) => {
-        setData(response.data);
+        setData(response.data.articles);
         setIsLoading(false);
         setError("");
       })
