@@ -3,11 +3,29 @@ import { NewsItemBlock } from "../styled/newscss";
 
 
 
-const NewsItem = () => {
+const NewsItem = ({item:{title, description, url, urlToImage}}) => {
+
+
   return (
-    <div>
-      
-    </div>
+    <NewsItemBlock>
+      {
+        urlToImage && (
+          <div className='thumbnail'>
+            <a href={url}>
+              <img src={urlToImage} alt="thumbnail" />
+            </a>
+          </div>
+        )
+      }
+      <div className='contents'>
+        <h2>
+          <a href={url}>
+            {title}
+          </a>
+        </h2>
+        <p>{description}</p>
+      </div>
+    </NewsItemBlock>
   )
 }
 

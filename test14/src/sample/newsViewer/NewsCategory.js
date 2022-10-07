@@ -1,8 +1,17 @@
 import React from 'react'
+import { CategoryBlock, CategoryLink, categories } from '../styled/newscss'
 
-const NewsCategory = () => {
+
+
+const NewsCategory = ({category, selectText}) => {
   return (
-    <div>NewsCategory</div>
+    <CategoryBlock>
+      {
+        categories.map((item) => {
+          <CategoryLink key={item.name} active={category === item.name} onClick={()=>selectText(item.name)}> {item.text}</CategoryLink>
+        })
+      }
+    </CategoryBlock>
   )
 }
 
